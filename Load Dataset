@@ -1,0 +1,4 @@
+iris = load_iris()
+df = pd.DataFrame(iris.data, columns=iris.feature_names)
+df['species'] = iris.target
+df['species'] = df['species'].map({i: name for i, name in enumerate(iris.target_names)})
