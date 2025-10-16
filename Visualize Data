@@ -1,0 +1,3 @@
+sns.pairplot(df, hue='species')
+plt.suptitle("Iris Feature Distribution by Species", y=1.02)
+plt.show()
